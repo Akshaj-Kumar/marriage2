@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#FAF7F2"/>
+  <!-- Royal Wedding Banquet Table -->
+  <ellipse cx="400" cy="380" rx="340" ry="120" fill="#F4EFEA" stroke="#C5A059" stroke-width="2"/>
+  
+  <!-- Golden Centerpiece Charger Plates -->
+  <circle cx="400" cy="330" r="55" fill="#D4AF37" stroke="#9E7C38" stroke-width="3"/>
+  <circle cx="400" cy="330" r="42" fill="#FAF7F2"/>
+  <!-- Marigold Vase -->
+  <rect x="385" y="260" width="30" height="50" rx="6" fill="#461927"/>
+  <circle cx="400" cy="245" r="28" fill="#EAB308"/>
+
+  <!-- Side Plates -->
+  <circle cx="210" cy="360" r="45" fill="#D4AF37" opacity="0.8"/>
+  <circle cx="590" cy="360" r="45" fill="#D4AF37" opacity="0.8"/>
+
+  <!-- Cutlery -->
+  <rect x="150" y="340" width="6" height="45" rx="2" fill="#C5A059"/>
+  <rect x="270" y="340" width="6" height="45" rx="2" fill="#C5A059"/>
+  <rect x="530" y="340" width="6" height="45" rx="2" fill="#C5A059"/>
+  <rect x="650" y="340" width="6" height="45" rx="2" fill="#C5A059"/>
+
+  <text x="400" y="530" font-family="'Cormorant Garamond', serif" font-size="32" font-weight="600" fill="#461927" text-anchor="middle" letter-spacing="2">The Royal Feast Setting</text>
+  <text x="400" y="565" font-family="'Montserrat', sans-serif" font-size="14" fill="#742D44" text-anchor="middle" letter-spacing="3">TRADITIONAL RAJASTHANI HOSPITALITY</text>
+</svg>

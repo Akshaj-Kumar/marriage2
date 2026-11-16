@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <rect width="800" height="600" fill="#2E0E18"/>
+  <circle cx="400" cy="220" r="220" fill="#C5A059" opacity="0.2"/>
+
+  <!-- Grand Jaipur Heritage Jharokhas & Domes -->
+  <!-- Main Central Dome -->
+  <path d="M 320 220 Q 400 110 480 220 Z" fill="#C5A059"/>
+  <rect x="340" y="220" width="120" height="240" fill="#3A121E" stroke="#C5A059" stroke-width="2"/>
+  <!-- Arch Opening -->
+  <path d="M 370 460 L 370 330 Q 400 290 430 330 L 430 460 Z" fill="#230811" stroke="#D4AF37" stroke-width="2"/>
+
+  <!-- Left Side Chhatri Dome -->
+  <path d="M 180 260 Q 240 180 300 260 Z" fill="#C5A059" opacity="0.9"/>
+  <rect x="200" y="260" width="80" height="200" fill="#3A121E" stroke="#C5A059" stroke-width="1.5"/>
+
+  <!-- Right Side Chhatri Dome -->
+  <path d="M 500 260 Q 560 180 620 260 Z" fill="#C5A059" opacity="0.9"/>
+  <rect x="520" y="260" width="80" height="200" fill="#3A121E" stroke="#C5A059" stroke-width="1.5"/>
+
+  <!-- Spire Finials (Kalash) -->
+  <line x1="400" y1="70" x2="400" y2="120" stroke="#D4AF37" stroke-width="4"/>
+  <circle cx="400" cy="70" r="7" fill="#D4AF37"/>
+
+  <text x="400" y="520" font-family="'Cinzel', serif" font-size="28" font-weight="600" fill="#E5C378" text-anchor="middle" letter-spacing="4">THE ROYAL HERITAGE PALACE</text>
+  <text x="400" y="555" font-family="'Montserrat', sans-serif" font-size="14" fill="#E8DFD5" text-anchor="middle" letter-spacing="3">JAIPUR • RAJASTHAN</text>
+</svg>

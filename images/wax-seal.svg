@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="sealShading" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="25%" stop-color="#FDFBF7" />
+      <stop offset="60%" stop-color="#EFE9DC" />
+      <stop offset="85%" stop-color="#D9CBB7" />
+      <stop offset="100%" stop-color="#B39E82" />
+    </radialGradient>
+    <radialGradient id="goldRim" cx="50%" cy="50%" r="50%">
+      <stop offset="70%" stop-color="#E5C378" stop-opacity="0" />
+      <stop offset="90%" stop-color="#D4AF37" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#8C6D23" stop-opacity="0.9" />
+    </radialGradient>
+    <filter id="sealShadow" x="-20%" y="-20%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="emboss">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur"/>
+      <feSpecularLighting in="blur" surfaceScale="2" specularConstant="1" specularExponent="15" result="specOut">
+        <fePointLight x="-5000" y="-10000" z="20000"/>
+      </feSpecularLighting>
+      <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut"/>
+      <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="1" k4="0"/>
+    </filter>
+  </defs>
+
+  <!-- Organic Wax Drips Outer Contour -->
+  <path d="M 100,10 
+           C 125,8 145,15 160,30 
+           C 178,48 190,70 192,95 
+           C 194,120 182,148 165,168 
+           C 148,188 122,194 98,192 
+           C 72,190 48,180 32,162 
+           C 14,142 8,118 10,92 
+           C 12,68 24,42 42,26 
+           C 60,12 78,11 100,10 Z" 
+        fill="url(#sealShading)" 
+        filter="url(#sealShadow)" />
+
+  <!-- Outer Ring Inset with Gold Sparkle -->
+  <circle cx="100" cy="100" r="76" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.65" stroke-dasharray="3 3"/>
+  <circle cx="100" cy="100" r="72" fill="none" stroke="#B39E82" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Inner Raised Medallion -->
+  <circle cx="100" cy="100" r="68" fill="url(#sealShading)" />
+
+  <!-- Monogram T & J Embossed -->
+  <g filter="url(#emboss)">
+    <!-- Laurel Wreath Around Monogram -->
+    <path d="M 55,100 C 55,70 72,50 100,48" fill="none" stroke="#A88B57" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 145,100 C 145,70 128,50 100,48" fill="none" stroke="#A88B57" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 55,100 C 55,130 72,152 100,152" fill="none" stroke="#A88B57" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M 145,100 C 145,130 128,152 100,152" fill="none" stroke="#A88B57" stroke-width="1.8" stroke-linecap="round"/>
+
+    <!-- Small Leaves -->
+    <circle cx="70" cy="58" r="3" fill="#A88B57" opacity="0.8"/>
+    <circle cx="130" cy="58" r="3" fill="#A88B57" opacity="0.8"/>
+    <circle cx="60" cy="80" r="3" fill="#A88B57" opacity="0.8"/>
+    <circle cx="140" cy="80" r="3" fill="#A88B57" opacity="0.8"/>
+    <circle cx="60" cy="120" r="3" fill="#A88B57" opacity="0.8"/>
+    <circle cx="140" cy="120" r="3" fill="#A88B57" opacity="0.8"/>
+    <circle cx="70" cy="142" r="3" fill="#A88B57" opacity="0.8"/>
+    <circle cx="130" cy="142" r="3" fill="#A88B57" opacity="0.8"/>
+
+    <!-- Elegant T & J Letters -->
+    <text x="75" y="112" font-family="'Great Vibes', cursive, 'Cinzel', serif" font-size="44" font-weight="bold" fill="#8C6D23" text-anchor="middle">T</text>
+    <text x="100" y="104" font-family="'Cinzel', serif" font-size="20" font-weight="600" fill="#B3934B" text-anchor="middle">&amp;</text>
+    <text x="125" y="116" font-family="'Great Vibes', cursive, 'Cinzel', serif" font-size="44" font-weight="bold" fill="#8C6D23" text-anchor="middle">J</text>
+  </g>
+</svg>

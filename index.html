@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Thanu & Jathu | Wedding Invitation 2025</title>
+    
+    <!-- Google Fonts: Cormorant Garamond, Cinzel, Montserrat, Great Vibes, Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    
+    <meta name="description" content="Wedding reception celebration invitation of Thanuja & Jathushan • 17 March 2025 • The Barn Tea Estate, Cotswolds, UK" />
+    <meta name="theme-color" content="#2A0B14" />
+    <script type="module" crossorigin src="./assets/index-0asKIEV6.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BNMT3845.css">
+  </head>
+  <body class="bg-ivory text-neutral-800 font-montserrat antialiased selection:bg-gold/30 selection:text-burgundy overflow-x-hidden">
+    <!-- Dedicated Wedding Audio: Alex Warren - Ordinary -->
+    <audio id="wedding-audio" preload="auto" loop playsinline></audio>
+    <script>
+      (function() {
+        var audio = document.getElementById('wedding-audio');
+        if (!audio) return;
+        var path = window.location.pathname;
+        var isSub = path.indexOf('/marriage2') !== -1;
+        audio.src = isSub ? '/marriage2/audio/ordinary.mp3' : './audio/ordinary.mp3';
+
+        function startAudio() {
+          if (!audio.paused) return;
+          var p = audio.play();
+          if (p !== undefined) {
+            p.then(function() {
+              window.__weddingAudioPlaying = true;
+              window.dispatchEvent(new CustomEvent('wedding-audio-started'));
+            }).catch(function(e) {
+              console.log('Autoplay requires gesture:', e);
+            });
+          }
+        }
+
+        // Try immediate autoplay
+        startAudio();
+        document.addEventListener('DOMContentLoaded', startAudio);
+        window.addEventListener('load', startAudio);
+
+        // Unlock on ANY user gesture anywhere on screen
+        var events = ['click', 'touchstart', 'touchend', 'pointerdown', 'pointerup', 'keydown'];
+        function onGesture() {
+          if (audio.paused) {
+            var p = audio.play();
+            if (p !== undefined) {
+              p.then(function() {
+                window.__weddingAudioPlaying = true;
+                window.dispatchEvent(new CustomEvent('wedding-audio-started'));
+                events.forEach(function(ev) {
+                  window.removeEventListener(ev, onGesture, true);
+                  document.removeEventListener(ev, onGesture, true);
+                });
+              }).catch(function(){});
+            }
+          }
+        }
+
+        events.forEach(function(ev) {
+          window.addEventListener(ev, onGesture, { capture: true, passive: true });
+          document.addEventListener(ev, onGesture, { capture: true, passive: true });
+        });
+      })();
+    </script>
+    <div id="root"></div>
+  </body>
+</html>
