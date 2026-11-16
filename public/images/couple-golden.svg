@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bgGolden" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D0B16"/>
+      <stop offset="50%" stop-color="#461927"/>
+      <stop offset="100%" stop-color="#1A050D"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#461927" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGolden)"/>
+  <circle cx="400" cy="240" r="260" fill="url(#goldGlow)"/>
+
+  <!-- Ornate Royal Arch -->
+  <path d="M 180 550 L 180 240 Q 400 60 620 240 L 620 550" fill="none" stroke="#D4AF37" stroke-width="2.5" opacity="0.6"/>
+  <path d="M 210 550 L 210 260 Q 400 100 590 260 L 590 550" fill="none" stroke="#C5A059" stroke-width="1" stroke-dasharray="8 6" opacity="0.4"/>
+
+  <!-- Couple Silhouette in Royal Attire -->
+  <g fill="#FDFBF7" opacity="0.95">
+    <!-- Groom Head / Turban with Kalgi -->
+    <ellipse cx="360" cy="230" rx="32" ry="34"/>
+    <polygon points="350,195 360,170 370,195" fill="#D4AF37"/>
+    <!-- Groom Sherwani -->
+    <path d="M 315 280 Q 360 260 405 280 L 415 520 L 305 520 Z" fill="#E5C378" opacity="0.9"/>
+    
+    <!-- Bride Head / Matha Patti -->
+    <ellipse cx="440" cy="245" rx="28" ry="30"/>
+    <path d="M 425 230 Q 440 220 455 230" stroke="#D4AF37" stroke-width="3" fill="none"/>
+    <!-- Bride Royal Lehenga & Dupatta -->
+    <path d="M 395 290 Q 440 275 480 300 L 530 520 L 370 520 Z" fill="#D4AF37" opacity="0.85"/>
+  </g>
+
+  <!-- Golden Varmala Garland -->
+  <path d="M 345 280 Q 380 350 415 285" fill="none" stroke="#EAB308" stroke-width="6" stroke-dasharray="6 4"/>
+  <path d="M 420 295 Q 455 365 485 300" fill="none" stroke="#EAB308" stroke-width="6" stroke-dasharray="6 4"/>
+
+  <text x="400" y="550" font-family="'Cinzel', serif" font-size="28" font-weight="600" fill="#E5C378" text-anchor="middle" letter-spacing="4">AARAV &amp; MEERA</text>
+  <text x="400" y="580" font-family="'Montserrat', sans-serif" font-size="14" fill="#E8DFD5" text-anchor="middle" letter-spacing="3">TWO HEARTS • ONE BEAUTIFUL JOURNEY</text>
+</svg>

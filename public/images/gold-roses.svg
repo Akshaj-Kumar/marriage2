@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 600" width="300" height="600">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF2B2" />
+      <stop offset="25%" stop-color="#E5C378" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="75%" stop-color="#A87932" />
+      <stop offset="100%" stop-color="#F3E5AB" />
+    </linearGradient>
+    <filter id="goldShine" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#goldShine)" stroke="url(#goldGradient)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main Rose Blossom -->
+    <g transform="translate(140, 220)">
+      <!-- Rose Center Petals -->
+      <path d="M 0,-15 C 10,-20 20,-10 15,5 C 10,20 -15,18 -18,0 C -20,-15 -5,-25 10,-22" stroke-width="2.5" fill="url(#goldGradient)" fill-opacity="0.2"/>
+      <path d="M -8,-6 C -2,-12 8,-12 12,-4 C 15,4 8,12 0,10 C -8,8 -12,0 -8,-6 Z" stroke-width="2" fill="url(#goldGradient)" fill-opacity="0.3"/>
+      <!-- Outer Petals Layer 1 -->
+      <path d="M -25,-10 C -35,10 -20,35 5,38 C 30,40 45,15 35,-10" stroke-width="2.5"/>
+      <path d="M 30,-12 C 45,-25 25,-45 0,-40 C -25,-35 -40,-15 -35,5" stroke-width="2.5"/>
+      <!-- Outer Petals Layer 2 -->
+      <path d="M -42,5 C -50,30 -25,58 10,55 C 45,52 60,25 50,-8" stroke-width="2"/>
+      <path d="M 45,-15 C 60,-35 30,-60 -5,-55 C -40,-50 -60,-20 -48,15" stroke-width="2"/>
+    </g>
+
+    <!-- Second Rose Blossom (Smaller, Upper) -->
+    <g transform="translate(180, 100) scale(0.7)">
+      <path d="M 0,-15 C 10,-20 20,-10 15,5 C 10,20 -15,18 -18,0 C -20,-15 -5,-25 10,-22" stroke-width="2.5" fill="url(#goldGradient)" fill-opacity="0.2"/>
+      <path d="M -25,-10 C -35,10 -20,35 5,38 C 30,40 45,15 35,-10" stroke-width="2.5"/>
+      <path d="M 30,-12 C 45,-25 25,-45 0,-40 C -25,-35 -40,-15 -35,5" stroke-width="2.5"/>
+    </g>
+
+    <!-- Third Rose Blossom (Lower) -->
+    <g transform="translate(190, 360) scale(0.8)">
+      <path d="M 0,-15 C 10,-20 20,-10 15,5 C 10,20 -15,18 -18,0 C -20,-15 -5,-25 10,-22" stroke-width="2.5" fill="url(#goldGradient)" fill-opacity="0.2"/>
+      <path d="M -25,-10 C -35,10 -20,35 5,38 C 30,40 45,15 35,-10" stroke-width="2.5"/>
+      <path d="M 30,-12 C 45,-25 25,-45 0,-40 C -25,-35 -40,-15 -35,5" stroke-width="2.5"/>
+    </g>
+
+    <!-- Flowing Stems & Tendrils -->
+    <path d="M 140,220 C 130,280 150,340 180,420 C 200,480 170,540 120,590" stroke-width="3"/>
+    <path d="M 180,100 C 160,150 145,190 140,220" stroke-width="2.5"/>
+    <path d="M 160,280 C 180,310 190,340 190,360" stroke-width="2"/>
+    
+    <!-- Delicate Leaves with Veins -->
+    <!-- Leaf 1 -->
+    <path d="M 120,170 C 80,150 60,180 80,210 C 100,240 130,210 120,170 Z" stroke-width="2" fill="url(#goldGradient)" fill-opacity="0.15"/>
+    <path d="M 120,170 C 95,190 80,210 80,210" stroke-width="1.5"/>
+    <!-- Leaf 2 -->
+    <path d="M 180,250 C 220,230 240,260 220,290 C 200,320 170,290 180,250 Z" stroke-width="2" fill="url(#goldGradient)" fill-opacity="0.15"/>
+    <!-- Leaf 3 (Bottom) -->
+    <path d="M 160,440 C 120,430 110,470 130,490 C 150,510 180,480 160,440 Z" stroke-width="2" fill="url(#goldGradient)" fill-opacity="0.15"/>
+    <!-- Leaf 4 (Top) -->
+    <path d="M 160,60 C 140,20 170,10 190,30 C 210,50 190,80 160,60 Z" stroke-width="2" fill="url(#goldGradient)" fill-opacity="0.15"/>
+
+    <!-- Small Golden Rosebuds -->
+    <circle cx="100" cy="120" r="6" fill="url(#goldGradient)"/>
+    <circle cx="130" cy="80" r="4" fill="url(#goldGradient)"/>
+    <circle cx="210" cy="460" r="5" fill="url(#goldGradient)"/>
+    <circle cx="170" cy="520" r="4" fill="url(#goldGradient)"/>
+  </g>
+</svg>
